@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="lIE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>DOM TEST</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+<p id="demo"></p>
+    
+    
+<div onmouseover="mOver(this)" 
+style="background-color:#D94A38;width:300px;height:20px;padding:40px;">
+PAGE JUST LOADED</div>
+    
+<h1 onmouseover="mOver(this)">H1 just loaded
+</h1>
+    
+<p onmouseover="mOver(this)">paragraph just loaded
+</p>
+
+<button id="myBtn">Try it</button>
+    
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+  
+function mOver(obj) {
+  var myLink = "/index.html"
+  obj.innerHTML = "you moused over!!! <a href="+myLink+" target='_blank'>index</a>"
+}
+
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+
+</script>    
+    
+ </body>
+</html>

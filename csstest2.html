@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    
+    
+  </head>
+  <body>
+    <h2>Grid of Boxes</h2>
+    
+    <img src="https://cdn.glitch.com/120a4b69-13ba-407c-8de9-8cb7aad92b56%2Femre-gencer-NZMeJsrMC8U-unsplash.jpg?v=1605748515052"  style="width:40%;">
+    <img src="https://cdn.glitch.com/120a4b69-13ba-407c-8de9-8cb7aad92b56%2Femre-gencer-NZMeJsrMC8U-unsplash.jpg?v=1605748515052"  style="width:40%;">
+    
+    
+    <p>Float boxes side by side:</p>
+    
+    <div class="clearfix">
+      <div class="box redbox threecol">
+        <p>
+          <a href="index.html">Some text inside the box</a>
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          rutrum iaculis imperdiet. Praesent viverra ipsum vel magna blandit
+          accumsan. Proin sed ex placerat, congue mi a, dignissim lectus. Nunc
+          molestie convallis est ut porta. Nunc at elit a lorem euismod feugiat.
+          Etiam id odio et urna imperdiet lobortis et in tortor. Donec vel
+          fermentum nunc. Aenean porttitor erat sit amet nisl sagittis blandit.
+          Ut dignissim risus eget rhoncus faucibus. Fusce at odio vel ex laoreet
+          eleifend. Donec elementum nibh in ultrices bibendum. Maecenas gravida,
+          velit sit amet scelerisque dictum, quam odio accumsan nisi, in viverra
+          ex felis non ligula. Nulla commodo lobortis lacus. Vivamus vestibulum
+          ornare sapien, ac dignissim sapien. Quisque vel quam at purus volutpat
+          dictum. sp
+        </p>
+      </div>
+      <div class="box yellowbox threecol">
+        <p>
+          Some text inside the box. Lorem Ipsum is simply dummy text of the
+          printing and typesetting indust
+        </p>
+      </div>
+      <div class="box bluebox threecol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box greenbox twocol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box blackbox twocol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box yellowbox onecol">
+        <p>
+          Some text inside the box. Lorem Ipsum is simply dummy text of the
+          printing and typesetting indust
+        </p>
+      </div>
+    </div>
+
+    <p>
+      Note that we also use the clearfix hack to take care of the layout flow,
+      and that add the box-sizing property to make sure that the box doesn't
+      break due to extra padding. Try to remove this code to see the effect.
+    </p>
+  </body>
+</html>

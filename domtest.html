@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="lIE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+    
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+<p onclick="changeText(this)">Click on this paragraph too!</p>
+
+<div onclick="changeText(this)">What? I can click on this paragraph too?</div>
+    
+<p id="demo"></p>
+    
+<p id="demo2">Hello????</p>
+    
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:400px;">
+Mouse Over Me</div>
+
+<div onmouseover="mOver(this)" style="background-color:yellow; padding:30px;">Mouse over this second div</div>
+
+<button id="myBtn">Try this button</button>    
+    
+<script>
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+
+document.getElementById("demo").innerHTML = "Hello World!";
+document.getElementById("demo2").innerHTML = "This is my second line!";
+  
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+  
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("hello world! ");
+}
+</script>
+    
+  </body>
+</html>
