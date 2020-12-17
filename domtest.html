@@ -5,60 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="lIE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello!</title>
+    <title>Billie Eilish</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
-    
-    
-<h1 onclick="changeText(this)">Click on this text!</h1>
+    <h1 onclick="changeText(this)">Awards</h1>
 
-<p onclick="changeText(this)">Click on this paragraph too!</p>
+    <p onclick="changeText(this)">
+      Billie Eilish won quite a number of awards in the 2020 Grammys
+    </p>
 
-<div onclick="changeText(this)">What? I can click on this paragraph too?</div>
+    <div onclick="changeText(this)">Here are the awards she won</div>
+
+    <ul style="list-style-type:disc">
+      <p id="demo">Record of the year</p>
+      <p id="demo2">Album of the year</p>
+      <p id="demo3">Song of the year</p>
+      <p id="demo4">Best new artist</p>
+      <p id="demo5">Best pop vocal album</p>
+      <button id="myBtn">PRESS ME</button>
+    </ul>
     
-<p id="demo"></p>
+    <ul>
+    <p>
+      <a href="/index.html">Home</a>
+    </p>
     
-<p id="demo2">Hello????</p>
-    
-<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
-style="background-color:#D94A38;width:120px;height:20px;padding:400px;">
-Mouse Over Me</div>
+  </ul>  
+    <script>
+      document.getElementById("myBtn").addEventListener("click", myFunction);
 
-<div onmouseover="mOver(this)" style="background-color:yellow; padding:30px;">Mouse over this second div</div>
-
-<button id="myBtn">Try this button</button>    
-    
-<script>
-function changeText(id) {
-  id.innerHTML = "Ooops!";
-}
-
-document.getElementById("demo").innerHTML = "Hello World!";
-document.getElementById("demo2").innerHTML = "This is my second line!";
-  
-function mOver(obj) {
-  obj.innerHTML = "Thank You"
-}
-
-function mOut(obj) {
-  obj.innerHTML = "Mouse Over Me"
-}
-  
-document.getElementById("myBtn").addEventListener("click", myFunction);
-
-function myFunction() {
-  alert ("hello world! ");
-}
-</script>
-    
+      function myFunction() {
+        alert("Billie Eilish is not overrated ");
+      }
+    </script>
   </body>
 </html>

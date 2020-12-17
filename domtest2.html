@@ -9,45 +9,48 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
-    
-<p id="demo"></p>
-    
-    
-<div onmouseover="mOver(this)" 
-style="background-color:#D94A38;width:300px;height:20px;padding:40px;">
-PAGE JUST LOADED</div>
-    
-<h1 onmouseover="mOver(this)">H1 just loaded
-</h1>
-    
-<p onmouseover="mOver(this)">paragraph just loaded
-</p>
+    <p id="demo"></p>
 
-<button id="myBtn">Try it</button>
-    
-<script>
-document.getElementById("demo").innerHTML = "Hello World!";
-  
-function mOver(obj) {
-  var myLink = "/index.html"
-  obj.innerHTML = "you moused over!!! <a href="+myLink+" target='_blank'>index</a>"
-}
+    <div
+      onmouseover="mOver(this)"
+      style="background-color:#D94A38;width:300px;height:20px;padding:40px;"
+    >
+      PAGE JUST LOADED
+    </div>
 
-document.getElementById("myBtn").addEventListener("click", myFunction);
+    <h1 onmouseover="mOver(this)">H1 just loaded</h1>
 
-function myFunction() {
-  alert ("Hello World!");
-}
+    <p onmouseover="mOver(this)">paragraph just loaded</p>
 
-</script>    
-    
- </body>
+    <button id="myBtn">Try it</button>
+
+    <script>
+      document.getElementById("demo").innerHTML = "Hello World!";
+
+      function mOver(obj) {
+        var myLink = "/index.html";
+        obj.innerHTML =
+          "you moused over!!! what <a href=" +
+          myLink +
+          " target='_blank'>index</a>";
+      }
+
+      document.getElementById("myBtn").addEventListener("click", myFunction);
+
+      function myFunction() {
+        alert("Billie Eilish is not overrated");
+      }
+    </script>
+  </body>
 </html>
